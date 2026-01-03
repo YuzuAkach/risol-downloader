@@ -31,6 +31,7 @@ def download_media(url: str, type: str, codec: str):
         'addmetadata': True,
         'writethumbnail': True,
         'quiet': True,
+        'cookiefile': 'cookies.txt',
         'nocheckcertificate': True,
         'ignoreerrors': False,
         'logtostderr': False,
