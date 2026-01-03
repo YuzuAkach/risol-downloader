@@ -16,5 +16,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy kode aplikasi
 COPY . .
 
+RUN mkdir -p downloads && chmod 777 downloads
+
 # Jalankan aplikasi
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
